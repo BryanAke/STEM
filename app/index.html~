@@ -642,6 +642,7 @@ of course, means that JavaScript is available.
         <script src="scripts/templates.js"></script>
         <script src="scripts/components/style-helpers.js"></script>
         <script src="scripts/components/utils.js"></script>
+        <script src="scripts/components/Backbone.CrossDomainProxy.js"></script>
         <script src="scripts/models/admins.js"></script>
         <script src="scripts/models/content.js"></script>
         <script src="scripts/models/discovery.js"></script>

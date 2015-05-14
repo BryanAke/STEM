@@ -84,6 +84,13 @@ window.Stem = {
         // Make sure the App object is defined. If it isn't,
         // create one. The app handles everything from there.
 
+        
+        if (!Modernizr.cors) {
+            console.log("Falling back on crossorigin proxy for oae API.");
+            Stem.config.oae.protocol = 'http://crossorigin.me/' + Stem.config.oae.protocol;
+            console.log(Stem.config.oae);
+        }
+
         if (this.Routers && this.Routers.App) {
             Stem.app = new this.Routers.App();
         }
